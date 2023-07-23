@@ -1,0 +1,7 @@
+Another way to smoothly run React code is via  
+https://codepen.io/
+
+1. Create a Pen (project)
+In it's settings:
+2. JS>Javascript Preprocssor> select 'Babel'
+3. JS>Add External Scripts/Pens> type and select 'React' and 'React-dom'
