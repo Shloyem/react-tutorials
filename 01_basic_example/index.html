@@ -10,7 +10,12 @@
   </head>
 
   <body>
+    <div id="react-app"></div>
   </body>
-  <script type="text/babel"> console.log('React code should be inserted here'); </script>
+  <script type="text/babel">
+    const container = document.getElementById('react-app');
+    const root = ReactDOM.createRoot(container);
+    root.render(<h2>It's running!</h2>);
+  </script>
 
 </html>
