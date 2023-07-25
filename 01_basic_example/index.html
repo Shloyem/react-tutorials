@@ -13,9 +13,19 @@
     <div id="react-app"></div>
   </body>
   <script type="text/babel">
+    function Hi() { return <span>Hi,</span> }
+    function NameIsWhat() { return <span>my name is what? </span> }
+    function SlimShady() { return <span> my name is slim shady </span>; }
+    function Parent() { return <span><Hi /><NameIsWhat /> <SlimShady /><br /></span> }
     const container = document.getElementById('react-app');
     const root = ReactDOM.createRoot(container);
-    root.render(<h2>It's running!</h2>);
+    // Note that there needs to be one root element
+    root.render(
+      <div>
+        <Parent />
+        <Parent />
+      </div>
+    );
   </script>
 
 </html>
