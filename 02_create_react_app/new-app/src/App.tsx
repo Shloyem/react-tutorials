@@ -1,6 +1,7 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import Cheers from './Cheers'
 
 function App() {
   return (
@@ -19,7 +20,7 @@ function App() {
           Learn React
         </a>
         <h1>
-          This is auto-refreshing! Cool
+          <Cheers/>
         </h1>
       </header>
     </div>
