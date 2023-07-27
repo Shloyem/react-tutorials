@@ -1,5 +1,6 @@
 import React from 'react';
 import logo from './logo.svg';
+import picture from './hummus-pic.jpg';
 import './App.css';
 import Cheers from './Cheers'
 
@@ -22,6 +23,7 @@ function App() {
         <h1>
           <Cheers/>
         </h1>
+        <img src={picture} className="App-logo" alt="hummus" />
       </header>
     </div>
   );
