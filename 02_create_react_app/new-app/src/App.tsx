@@ -3,6 +3,7 @@ import logo from './logo.svg';
 import picture from './hummus-pic.jpg';
 import './App.css';
 import Cheers from './Cheers'
+import CurrentDate from './CurrentDate';
 
 function App() {
   const stringExample:string = 'Im a string!';
@@ -10,26 +11,22 @@ function App() {
   const boolExample:boolean = true;
   const arrayExample:string[] = ['Brazil', 'Argentina', 'Peru'];
   const jsxListItemArrayExample:JSX.Element[] = [<li>Brazil</li>, <li>Argentina</li>, <li>Peru</li>]
+  const nations = ['Brazil', 'Argentina', 'Peru'];
+  const listNations:JSX.Element[] = nations.map((nation, index) => <li key={index}> {nation} </li>)
+  // option A
+  const listNumbers:JSX.Element[] = Array.from({length:8}, (_, i) => <li key={8-i}> {8-i} </li>)
+  // option B
+  const items:JSX.Element[] = []; for (let i = 8; i > 0; i--) { items.push(<li key={i}>{i}</li>); }
   
   return (
     <div className="App">
       <header className="App-header">
-
-        {/* Came with the create-react-app
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a> */}
-        
         {/* Examples additions */}
+        <ul>
+          {listNumbers}
+        </ul>
+        {CurrentDate()}
+        {listNations}
         {stringExample}
         {jsxElementExample}
         { boolExample === true ? <span>bool is true</span> : <span>bool is false</span>}
