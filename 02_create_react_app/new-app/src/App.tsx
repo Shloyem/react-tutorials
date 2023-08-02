@@ -4,6 +4,7 @@ import picture from './hummus-pic.jpg';
 import './App.css';
 import Cheers from './Cheers'
 import CurrentDate from './CurrentDate';
+import PropExample from './PropExample';
 
 function App() {
   const stringExample:string = 'Im a string!';
@@ -54,7 +55,8 @@ function App() {
     <div className="App">
       <header className="App-header">
         {/* Examples additions */}
-        {playerArray}
+        <PropExample name="Joe" />
+        {/* {playerArray}
         {infoPairs}
         <ul>
           {listNumbers}
@@ -68,7 +70,8 @@ function App() {
         <ul className="Nations">
           {jsxListItemArrayExample}
         </ul>
-        <Cheers/>
+        <Cheers/> */}
+        <br/><br/><br/><br/><br/>
         <img src={picture} className="App-logo" alt="hummus" />
         {/* valid in HTML but not JSX examples */}
         {/* 1. class is a saved word in js and therefore not allowed here */}
