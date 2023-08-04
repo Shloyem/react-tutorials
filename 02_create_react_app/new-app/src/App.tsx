@@ -73,7 +73,7 @@ function App() {
     <div className="App">
       <header className="App-header">
         {/* Examples additions */}
-        <PropExample name="Joe" />
+        <PropExample name="Joe" streetName="El loco" />
         {/* {playerArray}
         {infoPairs}
         <ul>
