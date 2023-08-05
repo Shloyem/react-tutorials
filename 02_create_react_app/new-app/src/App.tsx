@@ -69,11 +69,16 @@ function App() {
     );
   });
 
+  const Person = {
+    name: 'Gever',
+    streetName: 'Lucas',
+  };
   return (
     <div className="App">
       <header className="App-header">
         {/* Examples additions */}
-        <PropExample name="Joe" streetName="El loco" />
+        <PropExample name={Person.name} streetName={Person.streetName} />
+        {/* <PropExample name="Joe" streetName="El loco" /> */}
         {/* {playerArray}
         {infoPairs}
         <ul>
