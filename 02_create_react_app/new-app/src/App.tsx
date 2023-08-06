@@ -5,6 +5,7 @@ import './App.css';
 import Cheers from './Cheers';
 import CurrentDate from './CurrentDate';
 import PropExample from './PropExample';
+import PersonProp from './PersonProp';
 
 function App() {
   const stringExample: string = 'Im a string!';
@@ -69,7 +70,7 @@ function App() {
     );
   });
 
-  const Person = {
+  const person = {
     name: 'Gever',
     streetName: 'Lucas',
   };
@@ -77,7 +78,8 @@ function App() {
     <div className="App">
       <header className="App-header">
         {/* Examples additions */}
-        <PropExample name={Person.name} streetName={Person.streetName} />
+        <PersonProp person={person} />
+        {/* <PropExample name={person.name} streetName={person.streetName} /> */}
         {/* <PropExample name="Joe" streetName="El loco" /> */}
         {/* {playerArray}
         {infoPairs}
