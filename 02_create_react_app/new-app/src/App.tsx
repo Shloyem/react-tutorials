@@ -7,6 +7,7 @@ import CurrentDate from './CurrentDate';
 import PropExample from './PropExample';
 import PersonProp from './PersonProp';
 import PersonObjExample from './PersonObjExample';
+import Player from './Player';
 
 function App() {
   const stringExample: string = 'Im a string!';
@@ -79,11 +80,13 @@ function App() {
     name: 'Gever',
     streetName: 'Lucas',
   };
+
   return (
     <div className="App">
       <header className="App-header">
         {/* Examples additions */}
-        <PersonObjExample personObj={person} />
+        <Player name={'Eran'} titles={50} />
+        {/* <PersonObjExample personObj={person} /> */}
         {/* <PersonProp person={person} /> */}
         {/* <PropExample name={person.name} streetName={person.streetName} /> */}
         {/* <PropExample name="Joe" streetName="El loco" /> */}

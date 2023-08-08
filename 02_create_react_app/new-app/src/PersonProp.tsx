@@ -13,6 +13,7 @@ type personInfo = {
 export default function PersonProp(props: personInfo): JSX.Element {
   const name: string = props.person.name;
   const streetName: string = props.person.streetName;
+  // const {streetName, name} = props.person; // same
   return (
     <span>
       Have a good day {name} a.k.a {streetName}
