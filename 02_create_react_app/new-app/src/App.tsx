@@ -81,11 +81,15 @@ function App() {
     streetName: 'Lucas',
   };
 
+  type playerInfo = { name: string; titles: number };
+  const player: playerInfo = { name: 'Eran', titles: 50 };
+
   return (
     <div className="App">
       <header className="App-header">
         {/* Examples additions */}
-        <Player name={'Eran'} titles={50} />
+        <Player player={player} />
+        {/* <Player name={'Eran'} titles={50} /> */}
         {/* <PersonObjExample personObj={person} /> */}
         {/* <PersonProp person={person} /> */}
         {/* <PropExample name={person.name} streetName={person.streetName} /> */}
