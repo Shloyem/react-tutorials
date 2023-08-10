@@ -1,0 +1,5 @@
+For debugging recommendations:
+1. Use F12 or ctrl+shift+i and choose 'Sources'.
+2. Ctrl+P to search for a file name.
+3. Install React Developer Tools extension
+https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi/
